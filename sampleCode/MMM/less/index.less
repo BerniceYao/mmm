@@ -1,0 +1,135 @@
+
+// 变量
+@desgin: 750;           // 设计图尺寸 750
+@base: @desgin / 10;    // 基准值
+@mainColor: #ff841d;
+
+// 导航
+.m_nav {
+    margin-top: 20rem/@base;
+    width: 100%;
+    background: #fff;
+    padding-top: 50rem/@base;
+    
+    li {
+        width: 25%;
+        height: 175rem/@base;
+        float: left;
+        text-align: center;
+
+        img {
+            width: 100rem/@base;
+            margin: 0 auto;
+        }
+
+        p {
+            font-size: 24rem/@base;
+            line-height: 50rem/@base;
+        }
+    }
+}
+// 推荐
+.m_discount {
+    margin-top: 10rem/@base;
+
+    .d_content {
+        a {
+            border-bottom: 1rem/@base solid #ccc;
+            background: #fff;
+            height: 260rem/@base;
+
+            .imgBox {
+                width: 235rem/@base;
+                height: 100%;
+                float: left;
+                padding-top: 40rem/@base;
+                padding-left: 20rem/@base;
+                
+                img {
+                    width: 200rem/@base;
+                    height: 200rem/@base;
+                }
+            }
+
+            .info {
+                height: 100%;
+                overflow: hidden;
+                position: relative;
+                padding: 25rem/@base;
+
+                .title {
+                    font-size: 26rem/@base;
+                }
+                .price {
+                    line-height: 50rem/@base;
+                    font-size: 26rem/@base;
+                    color: @mainColor;
+                }
+                .mall,
+                .num {
+                    color: #777;
+                    font-size: 24rem/@base;
+                    position: absolute;
+                    bottom: 60rem/@base;
+                }
+                .mall {
+                    left: 25rem/@base;
+                }
+                .num {
+                    right: 25rem/@base;
+                    
+                    i {
+                        padding-right: 5rem/@base;
+                    }
+                }
+                
+            }
+        }
+    }
+
+    .d_more {
+        padding: 20rem/@base;
+        background: #fff;
+        padding-bottom: 0;
+
+        a {
+            width: 100%;
+            height: 60rem/@base;
+            line-height: 60rem/@base;
+            text-align: center;
+            font-size: 24rem/@base;
+            border: 1rem/@base solid #ccc;
+            border-radius: 5rem/@base;
+        }
+    }
+}
+
+// 标题
+.m_title {
+    height: 70rem/@base;
+    background: linear-gradient(to bottom, #ffaf47, #ff9000);
+    border-bottom: solid 1rem/@base #ffc881;
+    color: #fff;
+    padding: 0 20rem/@base;
+    line-height: 70rem/@base;
+    position: relative;
+
+    .icon_more {
+        width: 85rem/@base;
+        height: 70rem/@base;
+        background: url(../images/more.png) center no-repeat;
+        background-size: 40rem/@base 40rem/@base;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+// 排行
+.m_sort {
+    margin-top: 20rem/@base;
+    margin-bottom: 60rem/@base;
+}
+
+
+
+

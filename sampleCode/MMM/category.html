@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/fa/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/category.css">
+    <script src="./lib/flexible/flexible.js"></script>
+</head>
+<body>
+    <div class="m_container">
+        <!-- 头部 -->
+        <div class="m_header">
+            <a href="#" class="logo"><h1>慢慢买</h1></a>
+            <a href="#" class="app"></a>
+        </div>
+        <!-- 搜索框 -->
+        <div class="m_search">
+            <input type="text" class="fl" placeholder="请输入你想比价的商品">
+            <button class="fr">搜索</button>
+        </div>
+        <!-- 分类 -->
+        <div class="m_category">
+            <ul class="cate">
+                <li>
+                    <a class="classify" href="javascript:;"><span>大家电</span><i class="fa fa-angle-down"></i></a>
+                    <ul class="list clearfix">
+                        <li><a href="#">电视</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 底部 -->
+        <div class="m_footer">
+            <ul class="clearfix login">
+                <li class="w30"><a href="#">登录</a></li>
+                <li class="w30"><a href="#">注册</a></li>
+                <li class="w40" id="top"><a href="javascript:;"><img src="./images/top.jpg" alt="" class="top"> <span>返回顶部</span></a></li>
+            </ul>
+            <p class="down"><a href="#">手机APP下载</a> <a href="#">慢慢买手机版</a>-- 掌上比价平台</p>
+            <p class="net">m.manmanbuy.com</p>
+        </div>
+    </div>
+
+    <!-- 分类模板 -->
+    <script type="text/html" id="cateTmp">
+        {{ each result v i }}
+            <li>
+                <a data-id="{{ v.titleId }}" class="classify" href="javascript:;"><span>{{ v.title }}</span><i class="fa fa-angle-down"></i></a>
+                <ul class="list clearfix" index="{{ v.titleId }}">
+                </ul>
+            </li>
+        {{ /each }}
+    </script>
+
+    <!-- 列表模板 -->
+    <script type="text/html" id="listTmp">
+        {{ each result v i }}
+            <li><a href="productList.html?categoryId={{ v.categoryId }}" >{{ v.category }}</a></li>
+        {{ /each }}
+    </script>
+
+
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/category.js"></script>
+</body>
+</html>

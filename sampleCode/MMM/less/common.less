@@ -1,0 +1,129 @@
+// 样式统一
+@import "normalize";
+
+// 样式重置
+@import "base";
+
+// 变量
+@desgin: 750;           // 设计图尺寸 750
+@base: @desgin / 10;    // 基准值
+@mainColor: #ff841d;
+
+// 公共部分
+
+// 容器
+.m_container {
+    width: 100%;
+    background: #f1f1f1;
+}
+// 头部
+.m_header {
+    height: 100rem/@base;
+    background: @mainColor;
+    padding-right: 100rem/@base;
+    position: relative;
+    
+    .logo {
+        width: 410rem/@base;
+        height: 100%;
+        font-size: 0;
+        padding-left: 35rem/@base; 
+
+        h1 {
+            width: 371rem/@base;
+            height: 100%;
+            background: url(../images/header_logo.png) center no-repeat;
+            background-size: 371rem/@base 50rem/@base;
+        }
+    }
+    .app {
+        width: 100rem/@base;
+        height: 100rem/@base;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: url(../images/header_app.png) center no-repeat;
+    }
+}
+// 搜索框
+.m_search {
+    height: 100rem/@base;
+    width: 100%;
+    background: #fff;
+    padding: 20rem/@base;
+
+    input {
+        width: 530rem/@base;
+        line-height: 60rem/@base;
+        border-radius: 30rem/@base;
+        background: #f1f1f1;
+        padding-left: 40rem/@base;
+        font-size: 22rem/@base;
+    }
+
+    button {
+        width: 130rem/@base;
+        background: @mainColor;
+        color: #fff;
+        line-height: 60rem/@base;
+        text-align: center;
+        border-radius: 30rem/@base;
+        letter-spacing: 1rem/@base;
+        font-size: 28rem/@base;
+    }
+}
+// 底部
+.m_footer {
+    padding-bottom: 35rem/@base;
+    
+    .login {
+        border-top: 2rem/@base solid #ccc;
+        border-bottom: 2rem/@base solid #ccc;
+
+        li {
+            float: left;
+            border-right: 2rem/@base solid #ccc;
+
+            &:last-child {
+                border-right: none;
+                a {
+                    position: relative;
+                }
+            }
+            a {
+                text-align: center;
+                line-height: 65rem/@base;
+                font-size: 26rem/@base;
+            }
+        }
+        .top {
+            width: 30rem/@base;
+            height: 30rem/@base;
+            position: absolute;
+            top: 50%;
+            left: 60rem/@base;
+            transform: translateY(-50%);
+        }
+    }
+    .down {
+        padding-top: 35rem/@base;
+        text-align: center;
+        color: #777;
+        font-size: 24rem/@base;
+        a {
+            display: inline;
+            &:first-child {
+                color: #fd1715;
+            }
+            &:last-child {
+                color: #000;
+            }
+        }
+    }
+    .net {
+        padding-top: 12rem/@base;
+        color: #777;
+        text-align: center;
+        font-size: 20rem/@base;
+    }
+}

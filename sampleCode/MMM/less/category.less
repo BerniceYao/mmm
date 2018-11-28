@@ -1,0 +1,73 @@
+// 分类页
+
+// 变量
+@desgin: 750;           // 设计图尺寸 750
+@base: @desgin / 10;    // 基准值
+@mainColor: #ff841d;
+
+
+.m_category {
+    padding-bottom: 50rem/@base;
+    background: #fff;
+
+    .cate {
+        border-radius: 10rem/@base;
+        border-top: 2rem/@base solid #ccc;
+        border-bottom: 2rem/@base solid #ccc;
+        background: #ededed;
+        & > li {
+            border-bottom: 1rem/@base solid #ccc;
+            &:first-child {
+                border-radius: 10rem/@base 10rem/@base 0 0;
+            }
+            &:last-child {
+                border-radius: 0 0 10rem/@base 10rem/@base;
+            }
+
+            li:nth-last-child(-n+2) {
+                border-bottom: none;
+            }
+        }
+    }
+
+    .classify {
+        line-height: 80rem/@base;
+        padding: 0 30rem/@base;
+        font-size: 32rem/@base;
+        font-weight: 700;
+        color: #000;
+        position: relative;
+
+        i {
+            width: 80rem/@base;
+            height: 80rem/@base;
+            text-align: center;
+            line-height: 80rem/@base;
+            color: #787878;
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: 38rem/@base;
+        }
+    }
+
+    .list {
+        border-top: 1rem/@base solid #ccc;
+        background: #f9f9f9;
+        display: none;
+
+        li {
+            width: 33.3%;
+            float: left;
+            border-right: 1rem/@base solid #ccc;
+            border-bottom: 1rem/@base solid #ccc;
+
+            a {
+                font-weight: normal;
+                font-size: 28rem/@base;
+                text-align: center;
+                line-height: 80rem/@base;
+            }
+        }
+    }
+}
