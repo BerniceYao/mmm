@@ -1,0 +1,44 @@
+// 商场导航
+
+// 变量
+@desgin: 750;           // 设计图尺寸 750
+@base: @desgin / 10;    // 基准值
+@mainColor: #ff841d;
+
+// 主体列表
+.main {
+    padding: 20rem/@base 80rem/@base;
+    padding-bottom: 60rem/@base;
+
+    li {
+        float: left;
+        margin-right: 15rem/@base;
+        margin-bottom: 15rem/@base;
+
+        a {
+            height: 85rem/@base;
+            line-height: 83rem/@base;
+            border: 1rem/@base solid #ccc;
+            background: #f4f4f4;
+
+            .icon {
+                width: 60rem/@base;
+                height: 85rem/@base;
+                float: left;
+
+                img {
+                    width: 35rem/@base;
+                    height: 35rem/@base;
+                    margin: 25rem/@base;
+                }
+            }
+
+            .brand {
+                float: right;
+                font-size: 30rem/@base;
+                padding-left: 9rem/@base;
+                padding-right: 20rem/@base;
+            }
+        }
+    }
+}

@@ -1,0 +1,254 @@
+// 品牌详情
+
+// 变量
+@desgin: 750;           // 设计图尺寸 750
+@base: @desgin / 10;    // 基准值
+@mainColor: #ff841d;
+
+
+// 路径导航
+.nav {
+    width: 100%;
+    height: 75rem/@base;
+    background: linear-gradient(to bottom, #fff, #ededed);
+    border-top: 2rem/@base solid #ccc;
+    border-bottom: 2rem/@base solid #ccc;
+    padding: 0 20rem/@base;
+
+    li {
+        float: left;
+        a {
+            line-height: 75rem/@base;
+            color: #000;
+            font-size: 26rem/@base;
+
+            i {
+                font-size: 30rem/@base;
+                padding: 0 10rem/@base;
+            }
+        }
+    }
+
+}
+
+// h3
+h3 {
+    line-height: 80rem/@base;
+    border-top: 2rem/@base solid #ccc;
+    border-bottom: 2rem/@base solid #ccc;
+    padding: 0 25rem/@base;
+    font-size: 32rem/@base;
+    color: #7e2600;
+    background: #f3f3f3;
+}
+
+// 品牌
+.brand {
+
+    li {
+        height: 130rem/@base;
+        background: #fff;
+
+        &:first-child {
+            .icon_brand {
+                background: #f10e0e;
+            }
+        }
+        &:nth-child(2) {
+            .icon_brand {
+                background: #ff9314;
+            }
+        }
+        &:nth-child(3) {
+            .icon_brand {
+                background: #8adf5b;
+            }
+        }
+
+        a {
+            height: 100%;
+            padding: 0 80rem/@base;
+            position: relative;
+            border-bottom: 1rem/@base solid #ccc;
+
+            .info {
+                padding: 20rem/@base 0;
+                line-height: 45rem/@base;
+
+                .title {
+                    font-size: 30rem/@base;
+                    letter-spacing: 1rem/@base;
+                }
+
+                .sales {
+                    font-size: 28rem/@base;
+                    color: #9d9a97;
+                }
+            }
+
+            .icon_brand {
+                width: 40rem/@base;
+                height: 40rem/@base;
+                position: absolute;
+                top: 20rem/@base;
+                left: 20rem/@base;
+                font-size: 24rem/@base;
+                line-height: 40rem/@base;
+                text-align: center;
+                background: #c9c9c9;
+                color: #fff;
+            }
+
+            .icon_right {
+                width: 80rem/@base;
+                height: 130rem/@base;
+                line-height: 130rem/@base;
+                text-align: center;
+                font-size: 40rem/@base;
+                position: absolute;
+                top: 0;
+                right: 0;
+                color: #9aabab;
+            }
+        }
+    }
+}
+
+// 排行
+.sort {
+
+    .list {
+        a {
+            height: 235rem/@base;
+            border-bottom: 1rem/@base solid #ccc;
+            padding-top: 35rem/@base;
+            background: #fff;
+
+            .imgBox {
+                width: 235rem/@base;
+                height: 100%;
+                float: left;
+     
+                img {
+                    width: 160rem/@base;
+                    height: 160rem/@base;
+                    margin: 0 auto;
+                }
+            }
+            .info {
+                padding-right: 40rem/@base;
+                overflow: hidden;
+                height: 100%;
+
+                .title {
+                    font-size: 26rem/@base;
+                    line-height: 40rem/@base;
+                }
+                .price {
+                    line-height: 60rem/@base;
+                    font-size: 30rem/@base;
+                    color: #e92b00;
+                    font-weight: 700;
+                }
+
+                .num {
+                    color: #9e9e9f;
+                    font-size: 22rem/@base;
+                }
+                
+            }
+
+        }
+   
+    }
+}
+
+
+// 评论
+.comment {
+
+    .list {
+
+        a {
+            // height: 235rem/@base;
+            border-bottom: 1rem/@base solid #ccc;
+            background: #fff;
+
+            .pro {
+                height: 220rem/@base;
+                padding-top: 20rem/@base;
+
+
+                .imgBox {
+                    width: 240rem/@base;
+                    height: 200rem/@base;
+                    float: left;
+         
+                    img {
+                        width: 200rem/@base;
+                        height: 200rem/@base;
+                        margin: 0 auto;
+                    }
+                }
+                .tit {
+                    padding: 30rem/@base 0;
+                    font-size: 28rem/@base; 
+                    line-height: 46rem/@base;
+                    color: #8d9197;
+                    padding-right: 30rem/@base;   
+                }
+
+            }
+
+            .com {
+                margin: 0 20rem/@base;
+                padding: 20rem/@base;
+                background: #f8f8f8;
+                border: 1rem/@base solid #ccc;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    display: block;
+                    width: 30rem/@base;
+                    height: 30rem/@base;
+                    background: #f8f8f8;
+                    border: 1rem/@base solid #ccc;
+                    border-right: none;
+                    border-bottom: none;
+                    position: absolute;
+                    top: -15rem/@base;
+                    left: 65rem/@base;
+                    transform: rotate(45deg);
+                }
+
+                .info {
+                    font-size: 24rem/@base;
+                    .user {
+                        float: left;
+                        color: #62762a;
+                    }
+
+                    .star {
+                        margin-left: 5rem/@base;
+                        color: orange;
+                    }
+
+                    .time {
+                        float: right;
+                        color: #8d9197
+                    }
+                }
+
+                .con {
+                    font-size: 30rem/@base;
+                    line-height: 50rem/@base;
+                    padding: 20rem/@base 0;
+                }
+            }
+
+            
+
+        }
+    }
+}

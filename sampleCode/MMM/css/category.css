@@ -5,7 +5,7 @@
 .m_category .cate {
   border-radius: 0.13333333rem;
   border-top: 0.02666667rem solid #cccccc;
-  border-bottom: 0.02666667rem solid #cccccc;
+  border-bottom: 0.01333333rem solid #cccccc;
   background: #ededed;
 }
 .m_category .cate > li {
@@ -17,7 +17,7 @@
 .m_category .cate > li:last-child {
   border-radius: 0 0 0.13333333rem 0.13333333rem;
 }
-.m_category .cate > li li:nth-last-child(-n+2) {
+.m_category .cate > li:last-child li:nth-last-child(-n+2) {
   border-bottom: none;
 }
 .m_category .classify {
@@ -49,6 +49,9 @@
   float: left;
   border-right: 0.01333333rem solid #cccccc;
   border-bottom: 0.01333333rem solid #cccccc;
+}
+.m_category .list li:nth-child(3n) {
+  border-right: none;
 }
 .m_category .list li a {
   font-weight: normal;

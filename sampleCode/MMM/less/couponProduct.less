@@ -1,0 +1,152 @@
+// 优惠券商品
+
+
+// 变量
+@desgin: 750;           // 设计图尺寸 750
+@base: @desgin / 10;    // 基准值
+@mainColor: #ff841d;
+
+// 头部
+.c_header {
+    background: #f4483e;
+}
+// 小提示
+.tips {
+    width: 100%;
+    background: #fff;
+    line-height: 70rem/@base;
+    text-align: center;
+    font-size: 24rem/@base;
+    color: #9f9f9d;
+}
+
+//  列表
+.list {
+
+    li {
+        a {
+            border-bottom: 1rem/@base solid #ccc;
+            background: #fff;
+        
+            .imgBox {
+                width: 240rem/@base;
+                height: 100%;
+                float: left;
+                padding: 20rem/@base;
+                
+                img {
+                    width: 200rem/@base;
+                    height: 160rem/@base;
+                    margin: 0 auto;
+                }
+            }
+        
+            .info {
+                height: 100%;
+                overflow: hidden;
+                position: relative;
+                padding: 20rem/@base 0;
+                padding-right: 40rem/@base;
+        
+                .title {
+                    font-size: 28rem/@base;
+                    line-height: 44rem/@base;
+                }
+                .price {
+                    line-height: 50rem/@base;
+                    font-size: 28rem/@base;
+                    font-weight: 700;
+                    padding-left: 20rem/@base;
+                }
+
+                .time {
+                    padding: 10rem/@base 0;
+                    font-size: 24rem/@base;
+                    color: @mainColor;
+                }
+                .right {
+                    position: absolute;
+                    width: 40rem/@base;
+                    line-height: 100%;
+                    font-size: 60rem/@base;
+                    color: #9f9f9d;
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    text-align: center;
+
+
+                }
+                
+            }
+        }
+    }
+}
+
+// 模态框
+.modal {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    display: none;
+
+    .close {
+        width: 30rem/@base;
+        height: 30rem/@base;
+        position: absolute;
+        top: 10rem/@base;
+        right: 10rem/@base;
+        color: #fff;
+        font-size: 30rem/@base;
+        text-align: center;
+        line-height: 30rem/@base;
+    }
+
+    .swiper-container {
+        width: 300rem/@base;
+        height: 300rem/@base;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .swiper-slide {
+            width: 300rem/@base;
+            height: 240rem/@base;
+
+            img {
+                width: 300rem/@base;
+                height: 240rem/@base;
+            }
+        }
+
+        
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 40rem/@base;
+        height: 80rem/@base;
+        line-height: 70rem/@base;
+        border-radius: 10rem/@base;
+        color: #fff;
+        background: rgba(0, 0, 0, .5);
+        font-size: 60rem/@base;
+        text-align: center;
+        position: fixed;
+        outline: none;
+        top: 50%;
+        transform: translateY(-90%);
+        margin: 0;
+        z-index: 1111;
+    }
+    .swiper-button-prev {
+        left: 170rem/@base;
+    }
+    .swiper-button-next {
+        right: 170rem/@base;
+    }
+}

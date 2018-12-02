@@ -1,0 +1,67 @@
+// 国内折扣
+
+// 变量
+@desgin: 750;           // 设计图尺寸 750
+@base: @desgin / 10;    // 基准值
+@mainColor: #ff841d;
+
+// 列表
+.list {
+    padding-bottom: 70rem/@base;
+
+    li {
+        width: 50%;
+        height: 541rem/@base;
+        float: left;
+        border-right: 1rem/@base solid #ccc;
+        border-bottom: 1rem/@base solid #ccc;
+        &:nth-child(2n) {
+            border-right: none;
+        }
+
+        a {
+            height: 100%;
+            width: 100%;
+            padding: 20rem/@base; 
+            position: relative;
+
+            .imgBox {
+                width: 100%;
+                height: 320rem/@base;
+                padding: 20rem/@base 0;
+
+                img {
+                    width: 280rem/@base;
+                    height: 280rem/@base;
+                    margin: 0 auto;
+                }
+            }
+
+            .title {
+                font-size: 28rem/@base;
+                line-height: 40rem/@base;
+                font-weight: 700;
+            }
+
+            .price {
+                font-size: 28rem/@base;
+                padding: 10rem/@base 0;
+                line-height: 40rem/@base;
+                color: @mainColor;
+                position: absolute;
+                left: 25rem/@base;
+                bottom: 60rem/@base;
+            }
+
+            .info {
+                font-size: 24rem/@base;
+                color: #959498;
+                line-height: 40rem/@base;
+                position: absolute;
+                left: 25rem/@base;
+                bottom: 22rem/@base;
+            }
+        }
+    }
+
+}

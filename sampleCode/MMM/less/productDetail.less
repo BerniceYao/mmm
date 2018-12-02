@@ -1,0 +1,196 @@
+// 商品详情页
+// 变量
+@desgin: 750;           // 设计图尺寸 750
+@base: @desgin / 10;    // 基准值
+@mainColor: #ff841d;
+
+// 路径导航
+.nav {
+    width: 100%;
+    height: 75rem/@base;
+    background: linear-gradient(to bottom, #fff, #ededed);
+    border-top: 2rem/@base solid #ccc;
+    border-bottom: 2rem/@base solid #ccc;
+    padding: 0 20rem/@base;
+
+    li {
+        float: left;
+        a {
+            line-height: 75rem/@base;
+            color: #000;
+            font-size: 26rem/@base;
+
+            i {
+                font-size: 30rem/@base;
+                padding: 0 10rem/@base;
+            }
+        }
+    }
+
+    button {
+        line-height: 45rem/@base;
+        padding: 0 20rem/@base;
+        border: 1rem/@base solid #ccc;
+        background: linear-gradient(to bottom, #dadada, #fefefe);
+        margin-top: 12rem/@base;
+        border-radius: 8rem/@base;
+        font-size: 26rem/@base;
+    }
+}
+
+// 商品详情
+.proInfo {
+    background: #fff;
+    .title {
+        padding: 40rem/@base;
+        padding-bottom: 0;
+        text-align: center;
+        line-height: 48rem/@base;
+        font-size: 32rem/@base;
+    }
+    .imgBox {
+        width: 100%;
+        height: 380rem/@base;
+        position: relative;
+        // padding-top: 60rem/@base;
+
+        img {
+            width: 350rem/@base;
+            margin: 0 auto;
+        }
+        
+        i {
+            width: 85rem/@base;
+            height: 85rem/@base;
+            background: url(../images/sc.jpg) center no-repeat;
+            background-size: contain;
+            position: absolute;
+            bottom: 40rem/@base;
+            right: 50rem/@base;
+        }
+    }
+
+    .tab {
+        height: 70rem/@base;
+        width: 100%;
+        border-bottom: 2rem/@base solid #bf5137;
+        border-top: 2rem/@base solid #bf5137;
+        
+        a {
+            height: 100%;
+            width: 33.33333%;
+            text-align: center;
+            line-height: 66rem/@base;
+            color: #fff;
+            background: linear-gradient(to bottom, #ffda56, #ffc608);
+            float: left;
+            font-size: 30rem/@base;
+            border-left: 2rem/@base solid #bf5137;
+
+            &:first-child {
+                background: linear-gradient(to bottom, #ffad36, #ff9905);
+                border-left: none;
+            }
+        }
+    }
+    .info {
+        height: 90rem/@base;
+        border-bottom: 1rem/@base solid #ccc;
+
+        tr {
+            height: 90rem/@base;
+        }
+        .p_pic {
+            padding: 30rem/@base 0;
+            img {
+                width: 34rem/@base;
+                height: 34rem/@base;
+                margin: 0 auto;
+            }
+        }
+
+        td > a {
+            font-size: 30rem/@base;
+        }
+
+        td.red {
+            font-size: 28rem/@base;
+            color: #d8381f;
+            text-align: center;
+        }
+
+        td > span {
+            width: 115rem/@base !important;
+            height: 50rem/@base !important;
+            border-radius: 8rem/@base !important;
+            line-height: 50rem/@base !important;
+            text-align: center !important;
+            background: #ff5500 !important;
+            margin-right: 10rem/@base !important;
+            font-size: 28rem/@base !important;
+        }
+
+    }
+    .tips {
+        padding: 20rem/@base;
+        line-height: 36rem/@base;
+        font-size: 22rem/@base;
+        color: #988e94;
+    }
+}
+
+// 评价
+.comments {
+    border-top: 3rem/@base solid #606060;
+
+    .title {
+        background: #dbdbdb;
+        text-align: center;
+        line-height: 70rem/@base;
+        font-size: 28rem/@base;
+    }
+
+    .list {
+        li {
+           border-bottom: 1rem/@base solid #ccc;
+           background: #fff;
+           
+           .user {
+               height: 100rem/@base;
+               font-size: 22rem/@base;
+               color: #6a6a73;
+               padding: 20rem/@base;
+               line-height: 36rem/@base;
+               padding-bottom: 0;
+
+               .right {
+                   text-align: right;
+               }
+           }
+           .content {
+                padding: 10rem/@base 20rem/@base;
+                line-height: 40rem/@base;
+                font-size: 24rem/@base;
+                font-family: "微软雅黑";
+           }
+           
+        }
+    }
+
+    .more {
+        padding: 35rem/@base 18rem/@base;
+        background: #fff;
+        
+        a {
+            width: 100%;
+            line-height: 65rem/@base;
+            height: 65rem/@base;
+            text-align: center;
+            background: linear-gradient(to bottom, #f0f0f0, #d6d6d6);
+            border-bottom: 2rem/@base solid #b4b4b4;
+            font-size: 30rem/@base;
+            border-radius: 10rem/@base;
+            margin-bottom: 20rem/@base;
+        }
+    }
+}

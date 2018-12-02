@@ -1,0 +1,184 @@
+.nav {
+  width: 100%;
+  height: 1rem;
+  background: linear-gradient(to bottom, #ffffff, #ededed);
+  border-top: 0.02666667rem solid #cccccc;
+  border-bottom: 0.02666667rem solid #cccccc;
+  padding: 0 0.26666667rem;
+}
+.nav li {
+  float: left;
+}
+.nav li a {
+  line-height: 1rem;
+  color: #000;
+  font-size: 0.34666667rem;
+}
+.nav li a i {
+  font-size: 0.4rem;
+  padding: 0 0.13333333rem;
+}
+h3 {
+  line-height: 1.06666667rem;
+  border-top: 0.02666667rem solid #cccccc;
+  border-bottom: 0.02666667rem solid #cccccc;
+  padding: 0 0.33333333rem;
+  font-size: 0.42666667rem;
+  color: #7e2600;
+  background: #f3f3f3;
+}
+.brand li {
+  height: 1.73333333rem;
+  background: #fff;
+}
+.brand li:first-child .icon_brand {
+  background: #f10e0e;
+}
+.brand li:nth-child(2) .icon_brand {
+  background: #ff9314;
+}
+.brand li:nth-child(3) .icon_brand {
+  background: #8adf5b;
+}
+.brand li a {
+  height: 100%;
+  padding: 0 1.06666667rem;
+  position: relative;
+  border-bottom: 0.01333333rem solid #cccccc;
+}
+.brand li a .info {
+  padding: 0.26666667rem 0;
+  line-height: 0.6rem;
+}
+.brand li a .info .title {
+  font-size: 0.4rem;
+  letter-spacing: 0.01333333rem;
+}
+.brand li a .info .sales {
+  font-size: 0.37333333rem;
+  color: #9d9a97;
+}
+.brand li a .icon_brand {
+  width: 0.53333333rem;
+  height: 0.53333333rem;
+  position: absolute;
+  top: 0.26666667rem;
+  left: 0.26666667rem;
+  font-size: 0.32rem;
+  line-height: 0.53333333rem;
+  text-align: center;
+  background: #c9c9c9;
+  color: #fff;
+}
+.brand li a .icon_right {
+  width: 1.06666667rem;
+  height: 1.73333333rem;
+  line-height: 1.73333333rem;
+  text-align: center;
+  font-size: 0.53333333rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #9aabab;
+}
+.sort .list a {
+  height: 3.13333333rem;
+  border-bottom: 0.01333333rem solid #cccccc;
+  padding-top: 0.46666667rem;
+  background: #fff;
+}
+.sort .list a .imgBox {
+  width: 3.13333333rem;
+  height: 100%;
+  float: left;
+}
+.sort .list a .imgBox img {
+  width: 2.13333333rem;
+  height: 2.13333333rem;
+  margin: 0 auto;
+}
+.sort .list a .info {
+  padding-right: 0.53333333rem;
+  overflow: hidden;
+  height: 100%;
+}
+.sort .list a .info .title {
+  font-size: 0.34666667rem;
+  line-height: 0.53333333rem;
+}
+.sort .list a .info .price {
+  line-height: 0.8rem;
+  font-size: 0.4rem;
+  color: #e92b00;
+  font-weight: 700;
+}
+.sort .list a .info .num {
+  color: #9e9e9f;
+  font-size: 0.29333333rem;
+}
+.comment .list a {
+  border-bottom: 0.01333333rem solid #cccccc;
+  background: #fff;
+}
+.comment .list a .pro {
+  height: 2.93333333rem;
+  padding-top: 0.26666667rem;
+}
+.comment .list a .pro .imgBox {
+  width: 3.2rem;
+  height: 2.66666667rem;
+  float: left;
+}
+.comment .list a .pro .imgBox img {
+  width: 2.66666667rem;
+  height: 2.66666667rem;
+  margin: 0 auto;
+}
+.comment .list a .pro .tit {
+  padding: 0.4rem 0;
+  font-size: 0.37333333rem;
+  line-height: 0.61333333rem;
+  color: #8d9197;
+  padding-right: 0.4rem;
+}
+.comment .list a .com {
+  margin: 0 0.26666667rem;
+  padding: 0.26666667rem;
+  background: #f8f8f8;
+  border: 0.01333333rem solid #cccccc;
+  position: relative;
+}
+.comment .list a .com::before {
+  content: "";
+  display: block;
+  width: 0.4rem;
+  height: 0.4rem;
+  background: #f8f8f8;
+  border: 0.01333333rem solid #cccccc;
+  border-right: none;
+  border-bottom: none;
+  position: absolute;
+  top: -0.2rem;
+  left: 0.86666667rem;
+  transform: rotate(45deg);
+}
+.comment .list a .com .info {
+  font-size: 0.32rem;
+}
+.comment .list a .com .info .user {
+  float: left;
+  color: #62762a;
+}
+.comment .list a .com .info .star {
+  margin-left: 0.06666667rem;
+  color: orange;
+}
+.comment .list a .com .info .time {
+  float: right;
+  color: #8d9197;
+}
+.comment .list a .com .con {
+  font-size: 0.4rem;
+  line-height: 0.66666667rem;
+  padding: 0.26666667rem 0;
+}

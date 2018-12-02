@@ -1,0 +1,191 @@
+// 折扣商品详情页
+// 变量
+@desgin: 750;           // 设计图尺寸 750
+@base: @desgin / 10;    // 基准值
+@mainColor: #ff841d;
+
+// 详情
+.main {
+    padding: 0 20rem/@base;
+
+    .title {
+        font-size: 32rem/@base;
+        padding-top: 40rem/@base;
+        font-weight: 700;
+        text-align: center;
+    }
+    .info {
+        padding: 0 5rem/@base;
+        font-size: 22rem/@base;
+        color: #8a8b93;
+        line-height: 120rem/@base;
+    }
+    .desc {
+        font-size: 28rem/@base;
+        line-height: 50rem/@base;
+        position: relative;
+
+        .imgsm {
+            width: 260rem/@base;
+            height: 260rem/@base;
+            float: right;
+            img {
+                width: 250rem/@base;
+                height: 250rem/@base;
+                margin: 0 auto;
+            }
+        }
+        p {
+            padding-bottom: 5rem/@base;
+        }    
+    }
+    .imgBox {
+        width: 100%;
+        height: 710rem/@base;
+        img {
+            width: 680rem/@base;
+            height: 680rem/@base;
+            margin: 20rem/@base auto;
+        }
+    }
+    .inventory {
+        width: 100%;
+
+        #disstorck {
+            width: 280rem/@base;
+            margin: 0 auto;
+            box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+            border-color: #f1f1f1 #f1f1f1 #dbdbdb #f1f1f1;
+            border-width: 0px 1px 1px 1px;
+            border-style: solid;
+            a {
+                padding: 0 20rem/@base;
+                line-height: 50rem/@base;
+                font-size: 28rem/@base;
+
+                span {
+                    display: block;
+                    padding: 0 15rem/@base;
+                    text-align: left;
+                    border-bottom: 1rem/@base dashed #ccc;
+                    color: #000;
+                    font-family: "Microsoft Yahei";
+
+                    strong {
+                        float: right;
+                        font-weight: normal;
+                        color: @mainColor;
+                    }
+                }
+            }
+        }
+    }
+
+    .pay {
+        width: 100%;
+        height: 150rem/@base;
+        padding: 45rem/@base;
+
+        a {
+            height: 60rem/@base;
+            line-height: 60rem/@base;
+            text-align: center;
+            font-size: 24rem/@base;
+            color: #fff;
+            letter-spacing: 3rem/@base;
+            background: @mainColor;
+            border-radius: 10rem/@base;
+        }
+    }
+    .code {
+        width: 100%;
+        height: 300rem/@base;
+
+        img {
+            width: 710rem/@base;
+            height: 280rem/@base;
+            margin: 10rem/@base auto;
+        }
+    }
+
+    .comment {
+        padding: 20rem/@base 0;
+        .tit {
+            line-height: 80rem/@base;
+            font-size: 30rem/@base;
+        }
+        .reply {
+            border: 2rem/@base solid #ccc;
+            
+            .form {
+                textarea {
+                    height: 230rem/@base;
+                }
+            }
+            .ctrl {
+                border-top: 1rem/@base solid #ccc;
+                background: #fbfbfb;
+                height: 80rem/@base;
+                input {
+                    width: 180rem/@base;
+                    height: 80rem/@base;
+                    background: @mainColor;
+                    color:#fff;
+                    text-align: center;
+                    line-height: 80rem/@base;
+                    font-size: 30rem/@base;
+                    border: none;
+                    float: right;
+                }
+            }
+        }
+        .list {
+            .ui-border-b {
+                overflow: hidden;
+                padding-bottom: 80rem/@base;
+            }
+            .userimg {
+                width: 100rem/@base;
+                height: 100rem/@base;
+                float: left;
+                img {
+                    width: 80rem/@base;
+                    height: 80rem/@base;
+                    margin: 10rem/@base auto;
+                    border-radius: 50%;
+                }
+            }
+            .con {
+                padding-top: 5rem/@base;
+                width: 600rem/@base;
+                float: right;
+
+                .username {
+                    float: left;
+                    font-size: 26rem/@base;
+                    color: #5f95c6;
+                }
+
+                .time {
+                    color: #a499ab;
+                    font-size: 24rem/@base;
+                    float: right;
+                }
+
+                .content {
+                    padding-top: 20rem/@base;
+                    line-height: 40rem/@base;
+                    font-size: 24rem/@base;
+                    color: #5a616e;
+
+                    img {
+                        width: 30rem/@base;
+                        height: 30rem/@base;
+                        display: inline-block;
+                        margin-left: 5rem/@base;
+                    }
+                }
+            }
+        }
+    }
+}

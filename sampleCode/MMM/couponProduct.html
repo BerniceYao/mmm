@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>优惠券详情</title>
+    <link rel="stylesheet" href="./lib/fa/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./lib/swiper/css/swiper.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/couponProduct.css">
+    <script src="./lib/flexible/flexible.js"></script>
+</head>
+<body>
+    <!-- 容器 -->
+    <div class="m_container">
+        <!-- 头部 -->
+        <div class="c_header">
+            <a href="javascript:history.back();" class="back"><i class="fa fa-angle-left"></i></a>
+            <h1><span class="couponTitle"></span>优惠券</h1>
+            <a href="#" class="app"></a>
+        </div>
+        <!-- 小提示 -->
+        <div class="tips">-- 点餐前出示手机中的优惠券，即可享受优惠 --</div>
+        <!-- 列表 -->
+        <div class="list">
+            <ul>
+                <li>
+                    <a href="#" class="clearfix">
+                        <div class="imgBox"><img src="./images/proList.png" alt=""></div>
+                        <div class="info">
+                            <div class="title"> 两人小食组 新奥尔良烤翅2块+薯条(中)+黄金鸡块5块+劲爆鸡米花(小) 2016年10月凭肯德基优惠券</div>
+                            <div class="price">&yen;28</div>
+                            <div class="time">有效期至10月31日</div>
+                            <div class="right"><i class="fa fa-angle-right"></i></div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 底部 -->
+        <div class="m_footer">
+            <ul class="clearfix login">
+                <li class="w30"><a href="#">登录</a></li>
+                <li class="w30"><a href="#">注册</a></li>
+                <li class="w40" id="top"><a href="javascript:;"><img src="./images/top.jpg" alt="" class="top"> <span>返回顶部</span></a></li>
+            </ul>
+            <p class="down"><a href="#">手机APP下载</a> <a href="#">慢慢买手机版</a>-- 掌上比价平台</p>
+            <p class="net">m.manmanbuy.com</p>
+        </div>
+    </div>
+
+    <!-- 模态框 -->
+    <div class="modal">
+        <div class="close"><i class="fa fa-close"></i></div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- 模板 -->
+            </div>        
+        </div>
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"><i class="fa fa-angle-left"></i></div>
+        <div class="swiper-button-next"><i class="fa fa-angle-right"></i></div>
+    </div>
+
+    <!-- 列表模板 -->
+    <script type="text/html" id="listTmp">
+        {{ each result v i }}
+        <li>
+            <a href="javascript:;" class="clearfix mo" data-id="{{ i }}">
+                <div class="imgBox">{{@ v.couponProductImg }}</div>
+                <div class="info">
+                    <div class="title"> {{ v.couponProductName }}</div>
+                    <div class="price">{{ v.couponProductPrice }}</div>
+                    <div class="time">{{ v.couponProductTime }}</div>
+                    <div class="right"><i class="fa fa-angle-right"></i></div>
+                </div>
+            </a>
+        </li>
+        {{ /each }}
+    </script>
+
+    <!-- 轮播图模板 -->
+    <script type="text/html" id="modalTmp">
+    {{ each imgArr v i }}
+        <div class="swiper-slide">{{@ v }}</div>        
+    {{ /each }}
+    </script>
+
+
+ 
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./lib/iscroll/iscroll.js"></script>
+    <script src="./lib/swiper/js/swiper.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/couponProduct.js"></script>
+</body>
+</html>

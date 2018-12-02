@@ -35,24 +35,54 @@
         background: linear-gradient(to bottom, #dadada, #fefefe);
         margin-top: 12rem/@base;
         border-radius: 8rem/@base;
+        font-size: 26rem/@base;
     }
 }
 
 // 列表
 .proList {
+    margin-bottom: 50rem/@base;
 
-    .pro {
-       height: 235rem/@base;
-       border-bottom: 1rem/@base solid #ccc;
-       
-       .imgBox {
-           width: 240rem/@base;
-           height: 100%;
-           float: left;
-       }
-       .info {
-           overflow: hidden;
-           height: 100%;
-       }
+    .list {
+        a {
+            height: 235rem/@base;
+            border-bottom: 1rem/@base solid #ccc;
+            padding-top: 35rem/@base;
+            background: #fff;
+
+            .imgBox {
+                width: 235rem/@base;
+                height: 100%;
+                float: left;
+     
+                img {
+                    width: 160rem/@base;
+                    height: 160rem/@base;
+                    margin: 0 auto;
+                }
+            }
+            .info {
+                overflow: hidden;
+                height: 100%;
+
+                .title {
+                    font-size: 26rem/@base;
+                }
+                .price {
+                    padding-top: 10rem/@base;
+                    line-height: 60rem/@base;
+                    font-size: 26rem/@base;
+                    color: #e92b00;
+                }
+
+                .num {
+                    color: #9e9e9f;
+                    font-size: 22rem/@base;
+                }
+                
+            }
+
+        }
+   
     }
 }

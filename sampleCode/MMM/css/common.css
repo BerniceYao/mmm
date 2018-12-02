@@ -241,6 +241,10 @@ button:focus {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
+i,
+em {
+  font-style: normal;
+}
 img {
   display: block;
   width: 100%;
@@ -253,7 +257,8 @@ img {
 }
 .m_container {
   width: 100%;
-  background: #f1f1f1;
+  background: #efefef;
+  font-family: 'Times New Roman';
 }
 .m_header {
   height: 1.33333333rem;
@@ -280,6 +285,7 @@ img {
   top: 0;
   right: 0;
   background: url(../images/header_app.png) center no-repeat;
+  background-size: 0.90666667rem 0.90666667rem;
 }
 .m_search {
   height: 1.33333333rem;
@@ -307,6 +313,7 @@ img {
 }
 .m_footer {
   padding-bottom: 0.46666667rem;
+  background: #efefef;
 }
 .m_footer .login {
   border-top: 0.02666667rem solid #cccccc;
@@ -355,4 +362,164 @@ img {
   color: #777;
   text-align: center;
   font-size: 0.26666667rem;
+}
+.m_discount {
+  margin-top: 0.13333333rem;
+}
+.m_discount .d_content a {
+  border-bottom: 0.01333333rem solid #cccccc;
+  background: #fff;
+  height: 3.46666667rem;
+}
+.m_discount .d_content a .imgBox {
+  width: 3.13333333rem;
+  height: 100%;
+  float: left;
+  padding-top: 0.53333333rem;
+  padding-left: 0.26666667rem;
+}
+.m_discount .d_content a .imgBox img {
+  width: 2.66666667rem;
+  height: 2.66666667rem;
+  margin: 0 auto;
+}
+.m_discount .d_content a .info {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 0.33333333rem;
+}
+.m_discount .d_content a .info .title {
+  font-size: 0.34666667rem;
+}
+.m_discount .d_content a .info .price {
+  padding-top: 0.06666667rem;
+  line-height: 0.66666667rem;
+  font-size: 0.34666667rem;
+  color: #ff841d;
+}
+.m_discount .d_content a .info .mall,
+.m_discount .d_content a .info .num {
+  color: #777;
+  font-size: 0.32rem;
+  position: absolute;
+  bottom: 0.53333333rem;
+}
+.m_discount .d_content a .info .mall {
+  left: 0.33333333rem;
+}
+.m_discount .d_content a .info .num {
+  right: 0.33333333rem;
+}
+.m_discount .d_content a .info .num i {
+  padding-right: 0.06666667rem;
+}
+.m_discount .d_more {
+  padding: 0.26666667rem;
+  background: #fff;
+  padding-bottom: 0;
+}
+.m_discount .d_more a {
+  width: 100%;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  text-align: center;
+  font-size: 0.32rem;
+  border: 0.01333333rem solid #cccccc;
+  border-radius: 0.06666667rem;
+}
+.paginator {
+  height: 1rem;
+  background: #fff;
+  padding-top: 0.2rem;
+}
+.paginator div {
+  float: left;
+  width: 33.3%;
+}
+.paginator .prev,
+.paginator .next {
+  height: 0.8rem;
+  width: 2rem;
+  text-align: center;
+  line-height: 0.8rem;
+  background: linear-gradient(to bottom, #f0f0f0, #d7d7d7);
+  border-radius: 0.13333333rem;
+  font-size: 0.37333333rem;
+  margin: 0 auto;
+}
+.paginator .outer {
+  position: relative;
+}
+.paginator .outer .btn {
+  width: 0.4rem;
+  height: 0.8rem;
+  background: url(../images/btn.png) center no-repeat;
+  background-size: 0.4rem 0.8rem;
+  position: absolute;
+  top: 0;
+  right: 0.66666667rem;
+  z-index: 0;
+}
+.paginator .outer .selectBox {
+  display: block;
+  margin: 0 auto;
+  width: 1.73333333rem;
+  height: 0.8rem;
+  font-size: 0.37333333rem;
+  letter-spacing: 0.04rem;
+  padding-left: 0.26666667rem;
+  border: 0.01333333rem solid #cccccc;
+  background: transparent;
+}
+.paginator .outer .selectBox option {
+  border: 0.01333333rem solid #cccccc;
+}
+.c_header {
+  height: 1.13333333rem;
+  padding: 0 1.33333333rem;
+  text-align: center;
+  line-height: 1.33333333rem;
+  position: relative;
+  background: #ff841d;
+  color: #fff;
+}
+.c_header .back {
+  width: 1.33333333rem;
+  height: 1.13333333rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.c_header .back i {
+  color: #fff;
+  height: 1.06666667rem;
+  line-height: 1.06666667rem;
+  font-size: 0.8rem;
+}
+.c_header h1 {
+  font-size: 0.53333333rem;
+  line-height: 1.13333333rem;
+  margin: 0;
+  letter-spacing: 0.04rem;
+}
+.c_header .app {
+  width: 1.33333333rem;
+  height: 1.13333333rem;
+  background: url(../images/header_app.png) no-repeat center;
+  background-size: 0.90666667rem 0.90666667rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.not_allowed {
+  color: #888;
+  cursor: not-allowed;
+}
+.m_sprit {
+  background: url(../images/icon_bar.png) no-repeat;
+  background-size: 5.86666667rem 3.52rem;
+}
+.bgf {
+  background: #fff;
 }

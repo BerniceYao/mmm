@@ -10,6 +10,7 @@ $(function () {
             var htmlStr = template("cateTmp", info);
             $(".cate").html(htmlStr);
             $(".m_category").on("click", ".classify", function () {
+                $(this).find("i").toggleClass("fa-angle-right").toggleClass("fa-angle-down");
                 var titleId = $(this).data("id");
                 // 没有渲染过发送请求，否则直接渲染
                 if($(this).next().find("li").length === 0) {

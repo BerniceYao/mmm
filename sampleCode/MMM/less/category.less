@@ -13,7 +13,7 @@
     .cate {
         border-radius: 10rem/@base;
         border-top: 2rem/@base solid #ccc;
-        border-bottom: 2rem/@base solid #ccc;
+        border-bottom: 1rem/@base solid #ccc;
         background: #ededed;
         & > li {
             border-bottom: 1rem/@base solid #ccc;
@@ -22,11 +22,13 @@
             }
             &:last-child {
                 border-radius: 0 0 10rem/@base 10rem/@base;
+
+
+                li:nth-last-child(-n+2) {
+                    border-bottom: none;
+                }
             }
 
-            li:nth-last-child(-n+2) {
-                border-bottom: none;
-            }
         }
     }
 
@@ -61,6 +63,10 @@
             float: left;
             border-right: 1rem/@base solid #ccc;
             border-bottom: 1rem/@base solid #ccc;
+
+            &:nth-child(3n) {
+                border-right: none;
+            }
 
             a {
                 font-weight: normal;

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>凑单品</title>
+    <link rel="stylesheet" href="./lib/fa/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/gsproduct.css">
+    <script src="./lib/flexible/flexible.js"></script>
+</head>
+<body>
+    <!-- 容器 -->
+    <div class="m_container">
+        <!-- 头部 -->
+        <div class="c_header">
+            <a href="javascript:history.back();" class="back"><i class="fa fa-angle-left"></i></a>
+            <h1>白菜价 — 淘宝内部券</h1>
+            <a href="#" class="app"></a>
+        </div>
+        <!-- 下拉菜单 -->
+        <div class="tab bgf">
+            <div class="filter">
+                <ul class="clearfix">
+                    <li class="jd"><a href="javascript:;"><span>京东</span><i class="fa fa-caret-down"></i></a></li>
+                    <li class="hb"><a href="javascript:;"><span>华北</span><i class="fa fa-caret-down"></i></a></li>
+                    <li class="jg"><a href="javascript:;"><span>全部价格</span><i class="fa fa-caret-down"></i></a></li>
+                </ul>
+            </div>
+            <i class="icon_menu"></i>
+            <div class="mall menu" id="mall">
+                <ul>
+                    <li class="on"><a href="javascript:;"><span>京东</span><i class="fa fa-check"></i></a></li>
+                </ul>
+            </div>
+            <div class="area menu" id="area">
+                <ul>
+                    <li class="on"><a href="javascript:;"><span>华北</span><i class="fa fa-check"></i></a></li>
+                </ul>
+            </div>
+            <div class="price menu" id="price">
+                <ul>
+                    <li class="on"><a href="javascript:;"><span>全部价格</span><i class="fa fa-check"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 商品列表 -->
+        <div class="list">
+            <ul class="clearfix">
+                <li>
+                    <a href="javascript:;">
+                        <div class="imgBox"><img src="./images/cdp.jpg" alt=""></div>
+                        <div class="title one-txt-cut">廿一客(21cake)专用餐具 1人份(不单独配送)</div>
+                        <div class="pay clearfix"><div class="price">¥0.50</div><div class="btn">去凑单</div></div>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+        <!-- 底部 -->
+        <div class="m_footer">
+            <ul class="clearfix login">
+                <li class="w30"><a href="#">登录</a></li>
+                <li class="w30"><a href="#">注册</a></li>
+                <li class="w40" id="top"><a href="javascript:;"><img src="./images/top.jpg" alt="" class="top"> <span>返回顶部</span></a></li>
+            </ul>
+            <p class="down"><a href="#">手机APP下载</a> <a href="#">慢慢买手机版</a>-- 掌上比价平台</p>
+            <p class="net">m.manmanbuy.com</p>
+        </div>
+    </div>
+
+
+    
+    <!-- 店铺模板 -->
+    <script type="text/html" id="mallTmp">
+        {{ each result v i }}
+        <li class="{{ i === 0 ? 'on' : '' }}" data-id="{{ v.shopId }}"><a href="javascript:;"><span>{{ v.shopName }}</span><i class="fa fa-check"></i></a></li>
+        {{ /each }}
+    </script>
+    <!-- 地区模板 -->
+    <script type="text/html" id="areaTmp">
+        {{ each result v i }}
+        <li class="{{ i === 0 ? 'on' : '' }}" data-id="{{ v.areaId }}"><a href="javascript:;"><span>{{ v.areaName }}</span><i class="fa fa-check"></i></a></li>
+        {{ /each }}
+    </script>
+    <!-- 商品列表模板 -->
+    <script type="text/html" id="listTmp">
+        {{ each result v i }}
+        <li>
+            <a href="javascript:;">
+                <div class="imgBox"><img src="{{ v.productImg }}" alt=""></div>
+                <div class="title one-txt-cut">{{ v.productName }}</div>
+                <div class="pay clearfix"><div class="price">{{ v.productPrice }}</div><div class="btn">去凑单</div></div>
+            </a>
+        </li>
+        {{ /each }}
+    </script>
+
+ 
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./lib/iscroll/iscroll.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/gsproduct.js"></script>
+</body>
+</html>

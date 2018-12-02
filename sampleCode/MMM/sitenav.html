@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商场导航</title>
+    <link rel="stylesheet" href="./lib/fa/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/sitenav.css">
+    <script src="./lib/flexible/flexible.js"></script>
+</head>
+<body>
+    <!-- 容器 -->
+    <div class="m_container">
+        <!-- 头部 -->
+        <div class="c_header">
+            <a href="javascript:history.back();" class="back"><i class="fa fa-angle-left"></i></a>
+            <h1>商场导航</h1>
+            <a href="#" class="app"></a>
+        </div>
+
+        <!-- 主体列表 -->
+        <div class="main bgf">
+            <ul class="clearfix">
+                <li>
+                    <a href="#" class="clearfix">
+                        <i class="icon"><img src="./images/brand.png" alt=""></i>
+                        <div class="brand">京东商城</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 底部 -->
+        <div class="m_footer">
+            <ul class="clearfix login">
+                <li class="w30"><a href="#">登录</a></li>
+                <li class="w30"><a href="#">注册</a></li>
+                <li class="w40" id="top"><a href="javascript:;"><img src="./images/top.jpg" alt="" class="top"> <span>返回顶部</span></a></li>
+            </ul>
+            <p class="down"><a href="#">手机APP下载</a> <a href="#">慢慢买手机版</a>-- 掌上比价平台</p>
+            <p class="net">m.manmanbuy.com</p>
+        </div>
+    </div>
+
+    <!-- 主体列表模板 -->
+    <script type="text/html" id="mainTmp">
+    {{ each result v i }}
+    <li>
+        <a href="{{ v.navHref }}" class="clearfix">
+            <i class="icon"><img src="{{ v.navImg }}" alt=""></i>
+            <div class="brand">{{ v.navTitle }}</div>
+        </a>
+    </li>
+    {{ /each }}
+    </script>
+ 
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./lib/iscroll/iscroll.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/sitenav.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>优惠券</title>
+    <link rel="stylesheet" href="./lib/fa/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/coupon.css">
+    <script src="./lib/flexible/flexible.js"></script>
+</head>
+<body>
+    <!-- 容器 -->
+    <div class="m_container">
+        <!-- 头部 -->
+        <div class="c_header">
+            <a href="javascript:history.back();" class="back"><i class="fa fa-angle-left"></i></a>
+            <h1>优惠券</h1>
+            <a href="#" class="app"></a>
+        </div>
+        <!-- 路径导航 -->
+        <div class="nav">
+            <ol class="breadcrumb fl">
+                <li><a href="index.html">首页<i class="fa fa-angle-right"></i> </a></li>
+                <li><a href="javascript:;">优惠券<i class="fa fa-angle-right"></i></a></li>
+            </ol>
+        </div>
+
+        <!-- 列表 -->
+        <div class="list bgf">
+            <ul class="clearfix">
+                <li>
+                    <a href="#">
+                        <div class="imgBox"><img src="./images/kfc.jpg" alt=""></div>
+                        <div class="title">肯德基</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 底部 -->
+        <div class="m_footer">
+            <ul class="clearfix login">
+                <li class="w30"><a href="#">登录</a></li>
+                <li class="w30"><a href="#">注册</a></li>
+                <li class="w40" id="top"><a href="javascript:;"><img src="./images/top.jpg" alt="" class="top"> <span>返回顶部</span></a></li>
+            </ul>
+            <p class="down"><a href="#">手机APP下载</a> <a href="#">慢慢买手机版</a>-- 掌上比价平台</p>
+            <p class="net">m.manmanbuy.com</p>
+        </div>
+    </div>
+
+    <!-- 列表模板 -->
+    <script type="text/html" id="listTmp">
+        {{ each result v i }}
+            <li>
+                <a href="couponProduct.html?couponId={{ v.couponId }}&couponTitle={{ v.couponTitle }}">
+                    <div class="imgBox"><img src="{{ v.couponImg }}" alt=""></div>
+                    <div class="title">{{ v.couponTitle }}</div>
+                </a>
+            </li>
+        {{ /each }}
+    </script>
+ 
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./lib/iscroll/iscroll.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/coupon.js"></script>
+</body>
+</html>

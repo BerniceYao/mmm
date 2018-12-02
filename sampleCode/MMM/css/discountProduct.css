@@ -1,0 +1,142 @@
+.main {
+  padding: 0 0.26666667rem;
+}
+.main .title {
+  font-size: 0.42666667rem;
+  padding-top: 0.53333333rem;
+  font-weight: 700;
+}
+.main .price {
+  font-size: 0.4rem;
+  color: #ff841d;
+  line-height: 0.66666667rem;
+  padding: 0.13333333rem 0;
+}
+.main .info {
+  padding: 0 0.06666667rem;
+  font-size: 0.29333333rem;
+  color: #8a8b93;
+  line-height: 1.06666667rem;
+}
+.main .desc {
+  font-size: 0.37333333rem;
+  line-height: 0.66666667rem;
+  position: relative;
+}
+.main .desc .imgsm {
+  width: 3.46666667rem;
+  height: 2.4rem;
+  float: right;
+}
+.main .desc .imgsm img {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin: 0 auto;
+}
+.main .desc p {
+  padding-bottom: 0.06666667rem;
+}
+.main .imgBox {
+  width: 100%;
+  height: 6rem;
+}
+.main .imgBox img {
+  width: 5.33333333rem;
+  height: 5.33333333rem;
+  margin: 0.26666667rem auto;
+}
+.main .pay {
+  width: 100%;
+  height: 2rem;
+  padding: 0.6rem;
+}
+.main .pay a {
+  height: 0.8rem;
+  line-height: 0.8rem;
+  text-align: center;
+  font-size: 0.32rem;
+  color: #fff;
+  letter-spacing: 0.04rem;
+  background: #ff841d;
+  border-radius: 0.13333333rem;
+}
+.main .code {
+  width: 100%;
+  height: 4rem;
+}
+.main .code img {
+  width: 9.46666667rem;
+  height: 3.73333333rem;
+  margin: 0.13333333rem auto;
+}
+.main .comment {
+  padding: 0.26666667rem 0;
+}
+.main .comment .tit {
+  line-height: 1.06666667rem;
+  font-size: 0.4rem;
+}
+.main .comment .reply {
+  border: 0.02666667rem solid #cccccc;
+}
+.main .comment .reply .form textarea {
+  height: 3.06666667rem;
+}
+.main .comment .reply .ctrl {
+  border-top: 0.01333333rem solid #cccccc;
+  background: #fbfbfb;
+  height: 1.06666667rem;
+}
+.main .comment .reply .ctrl input {
+  width: 2.4rem;
+  height: 1.06666667rem;
+  background: #ff841d;
+  color: #fff;
+  text-align: center;
+  line-height: 1.06666667rem;
+  font-size: 0.4rem;
+  border: none;
+  float: right;
+}
+.main .comment .list .ui-border-b {
+  overflow: hidden;
+  padding-bottom: 1.06666667rem;
+}
+.main .comment .list .userimg {
+  width: 1.33333333rem;
+  height: 1.33333333rem;
+  float: left;
+}
+.main .comment .list .userimg img {
+  width: 1.06666667rem;
+  height: 1.06666667rem;
+  margin: 0.13333333rem auto;
+  border-radius: 50%;
+}
+.main .comment .list .con {
+  padding-top: 0.06666667rem;
+  width: 8rem;
+  float: right;
+}
+.main .comment .list .con .username {
+  float: left;
+  font-size: 0.34666667rem;
+  color: #5f95c6;
+}
+.main .comment .list .con .time {
+  color: #a499ab;
+  font-size: 0.32rem;
+  float: right;
+}
+.main .comment .list .con .content {
+  padding-top: 0.26666667rem;
+  line-height: 0.53333333rem;
+  font-size: 0.32rem;
+  color: #5a616e;
+}
+.main .comment .list .con .content img {
+  width: 0.4rem;
+  height: 0.4rem;
+  display: inline-block;
+  margin-left: 0.06666667rem;
+}

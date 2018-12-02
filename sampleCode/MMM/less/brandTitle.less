@@ -1,0 +1,93 @@
+// 品牌排行
+
+// 变量
+@desgin: 750;           // 设计图尺寸 750
+@base: @desgin / 10;    // 基准值
+@mainColor: #ff841d;
+
+
+// 路径导航
+.nav {
+    width: 100%;
+    height: 75rem/@base;
+    background: linear-gradient(to bottom, #fff, #ededed);
+    border-top: 2rem/@base solid #ccc;
+    border-bottom: 2rem/@base solid #ccc;
+    padding: 0 20rem/@base;
+
+    li {
+        float: left;
+        a {
+            line-height: 75rem/@base;
+            color: #000;
+            font-size: 26rem/@base;
+
+            i {
+                font-size: 30rem/@base;
+                padding: 0 10rem/@base;
+            }
+        }
+    }
+
+}
+
+// 排行
+.sort {
+    width: 100%;
+    padding: 25rem/@base 15rem/@base;
+    background: #fff;
+
+    a {
+        line-height: 80rem/@base;
+        border: 2rem/@base solid #ccc;
+        padding: 0 25rem/@base;
+        font-size: 32rem/@base;
+        color: #7e2600;
+        background: #eee;
+    }
+}
+
+.brand {
+    padding-bottom: 50rem/@base;
+    background: #fff;
+
+    .cate {
+        border-radius: 10rem/@base;
+        border-top: 2rem/@base solid #ccc;
+        border-bottom: 1rem/@base solid #ccc;
+        background: #ededed;
+        & > li {
+            border-bottom: 2rem/@base solid #ccc;
+            &:first-child {
+                border-radius: 10rem/@base 10rem/@base 0 0;
+            }
+            &:last-child {
+                border-radius: 0 0 10rem/@base 10rem/@base;
+            }
+
+        }
+    }
+
+    .classify {
+        line-height: 80rem/@base;
+        padding: 0 30rem/@base;
+        font-size: 32rem/@base;
+        font-weight: 700;
+        color: #000;
+        position: relative;
+
+        i {
+            width: 80rem/@base;
+            height: 80rem/@base;
+            text-align: center;
+            line-height: 80rem/@base;
+            color: #787878;
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: 38rem/@base;
+        }
+    }
+
+
+}

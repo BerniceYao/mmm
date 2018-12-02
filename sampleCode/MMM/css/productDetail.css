@@ -1,0 +1,162 @@
+.nav {
+  width: 100%;
+  height: 1rem;
+  background: linear-gradient(to bottom, #ffffff, #ededed);
+  border-top: 0.02666667rem solid #cccccc;
+  border-bottom: 0.02666667rem solid #cccccc;
+  padding: 0 0.26666667rem;
+}
+.nav li {
+  float: left;
+}
+.nav li a {
+  line-height: 1rem;
+  color: #000;
+  font-size: 0.34666667rem;
+}
+.nav li a i {
+  font-size: 0.4rem;
+  padding: 0 0.13333333rem;
+}
+.nav button {
+  line-height: 0.6rem;
+  padding: 0 0.26666667rem;
+  border: 0.01333333rem solid #cccccc;
+  background: linear-gradient(to bottom, #dadada, #fefefe);
+  margin-top: 0.16rem;
+  border-radius: 0.10666667rem;
+  font-size: 0.34666667rem;
+}
+.proInfo {
+  background: #fff;
+}
+.proInfo .title {
+  padding: 0.53333333rem;
+  padding-bottom: 0;
+  text-align: center;
+  line-height: 0.64rem;
+  font-size: 0.42666667rem;
+}
+.proInfo .imgBox {
+  width: 100%;
+  height: 5.06666667rem;
+  position: relative;
+}
+.proInfo .imgBox img {
+  width: 4.66666667rem;
+  margin: 0 auto;
+}
+.proInfo .imgBox i {
+  width: 1.13333333rem;
+  height: 1.13333333rem;
+  background: url(../images/sc.jpg) center no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: 0.53333333rem;
+  right: 0.66666667rem;
+}
+.proInfo .tab {
+  height: 0.93333333rem;
+  width: 100%;
+  border-bottom: 0.02666667rem solid #bf5137;
+  border-top: 0.02666667rem solid #bf5137;
+}
+.proInfo .tab a {
+  height: 100%;
+  width: 33.33333%;
+  text-align: center;
+  line-height: 0.88rem;
+  color: #fff;
+  background: linear-gradient(to bottom, #ffda56, #ffc608);
+  float: left;
+  font-size: 0.4rem;
+  border-left: 0.02666667rem solid #bf5137;
+}
+.proInfo .tab a:first-child {
+  background: linear-gradient(to bottom, #ffad36, #ff9905);
+  border-left: none;
+}
+.proInfo .info {
+  height: 1.2rem;
+  border-bottom: 0.01333333rem solid #cccccc;
+}
+.proInfo .info tr {
+  height: 1.2rem;
+}
+.proInfo .info .p_pic {
+  padding: 0.4rem 0;
+}
+.proInfo .info .p_pic img {
+  width: 0.45333333rem;
+  height: 0.45333333rem;
+  margin: 0 auto;
+}
+.proInfo .info td > a {
+  font-size: 0.4rem;
+}
+.proInfo .info td.red {
+  font-size: 0.37333333rem;
+  color: #d8381f;
+  text-align: center;
+}
+.proInfo .info td > span {
+  width: 1.53333333rem !important;
+  height: 0.66666667rem !important;
+  border-radius: 0.10666667rem !important;
+  line-height: 0.66666667rem !important;
+  text-align: center !important;
+  background: #ff5500 !important;
+  margin-right: 0.13333333rem !important;
+  font-size: 0.37333333rem !important;
+}
+.proInfo .tips {
+  padding: 0.26666667rem;
+  line-height: 0.48rem;
+  font-size: 0.29333333rem;
+  color: #988e94;
+}
+.comments {
+  border-top: 0.04rem solid #606060;
+}
+.comments .title {
+  background: #dbdbdb;
+  text-align: center;
+  line-height: 0.93333333rem;
+  font-size: 0.37333333rem;
+}
+.comments .list li {
+  border-bottom: 0.01333333rem solid #cccccc;
+  background: #fff;
+}
+.comments .list li .user {
+  height: 1.33333333rem;
+  font-size: 0.29333333rem;
+  color: #6a6a73;
+  padding: 0.26666667rem;
+  line-height: 0.48rem;
+  padding-bottom: 0;
+}
+.comments .list li .user .right {
+  text-align: right;
+}
+.comments .list li .content {
+  padding: 0.13333333rem 0.26666667rem;
+  line-height: 0.53333333rem;
+  font-size: 0.32rem;
+  font-family: "微软雅黑";
+}
+.comments .more {
+  padding: 0.46666667rem 0.24rem;
+  background: #fff;
+}
+.comments .more a {
+  width: 100%;
+  line-height: 0.86666667rem;
+  height: 0.86666667rem;
+  text-align: center;
+  background: linear-gradient(to bottom, #f0f0f0, #d6d6d6);
+  border-bottom: 0.02666667rem solid #b4b4b4;
+  font-size: 0.4rem;
+  border-radius: 0.13333333rem;
+  margin-bottom: 0.26666667rem;
+}

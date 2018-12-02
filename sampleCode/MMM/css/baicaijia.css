@@ -1,0 +1,190 @@
+.c_header {
+  background: #f4483e;
+}
+.tab {
+  width: 100%;
+  height: 1.06666667rem;
+  padding-right: 1.06666667rem;
+  position: relative;
+}
+.tab .icon_menu {
+  width: 1.06666667rem;
+  height: 1.06666667rem;
+  background: #fbfbfb url(../images/1.svg) center no-repeat;
+  background-size: 0.66666667rem 0.66666667rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.tab .ulbox {
+  height: 100%;
+  width: 8.93333333rem;
+  overflow: hidden;
+}
+.tab .ulbox li {
+  float: left;
+  padding: 0 0.33333333rem;
+  box-sizing: border-box;
+}
+.tab .ulbox li a {
+  font-size: 0.37333333rem;
+  line-height: 1rem;
+  border-bottom: 0.04rem solid transparent;
+}
+.tab .ulbox li.current a {
+  color: #d90000;
+  border-bottom: 0.04rem solid #d90000;
+}
+.content {
+  margin-bottom: 0.86666667rem;
+}
+.content li {
+  width: 100%;
+  height: 4.26666667rem;
+  margin-top: 0.13333333rem;
+  padding: 0.13333333rem 0;
+  overflow: hidden;
+  position: relative;
+}
+.content li .gobuy {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent;
+  z-index: 10;
+}
+.content li .imgBox {
+  width: 4rem;
+  height: 100%;
+  float: left;
+}
+.content li .imgBox img {
+  width: 3.73333333rem;
+  height: 3.73333333rem;
+  margin: 0.13333333rem auto;
+}
+.content li .info {
+  height: 100%;
+  width: 5.86666667rem;
+  float: right;
+  padding: 0.13333333rem;
+  padding-left: 0;
+  position: relative;
+}
+.content li .info .title {
+  font-size: 0.34666667rem;
+  line-height: 0.53333333rem;
+  font-family: "微软雅黑";
+}
+.content li .info .price {
+  color: #fd0000;
+  font-size: 0.56rem;
+  padding: 0.13333333rem 0;
+  position: absolute;
+  left: 0.26666667rem;
+  bottom: 1.97333333rem;
+}
+.content li .info .price i {
+  font-size: 0.42666667rem;
+  padding: 0 0.06666667rem;
+}
+.content li .info .price em {
+  font-size: 0.29333333rem;
+  padding: 0 0.06666667rem;
+}
+.content li .info .price del {
+  font-size: 0.29333333rem;
+  color: #aaa;
+  padding: 0 0.26666667rem;
+}
+.content li .info .f {
+  width: 100%;
+  padding-top: 0.26666667rem;
+  position: absolute;
+  bottom: 0.26666667rem;
+  left: 0.13333333rem;
+}
+.content li .info .f .bar {
+  color: #fd0000;
+  font-size: 0.29333333rem;
+  padding: 0.2rem 0;
+}
+.content li .info .f .bar i {
+  width: 2.4rem;
+  height: 0.4rem;
+  border-radius: 0.2rem;
+  border: 0.02666667rem solid #fd0000;
+  background: #ffb7b7;
+  display: block;
+  float: left;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+.content li .info .f .bar i em {
+  display: block;
+  background: #fd0000;
+  width: 75%;
+  height: 0.4rem;
+  border-radius: 0.2rem;
+  position: absolute;
+  top: -0.02666667rem;
+  left: 0;
+  z-index: 1;
+}
+.content li .info .f .bar i span {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 0.37333333rem;
+  font-size: 0.29333333rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+}
+.content li .info .f .bar b {
+  padding: 0 0.33333333rem;
+  font-weight: normal;
+}
+.content li .info .f .pay {
+  height: 0.73333333rem;
+  width: 100%;
+  padding-top: 0.13333333rem;
+}
+.content li .info .f .pay .coupon {
+  float: left;
+}
+.content li .info .f .pay .coupon a {
+  line-height: 0.66666667rem;
+  border: 0.02666667rem dashed #fd0000;
+  padding: 0 0.2rem;
+  color: #fd0000;
+  font-size: 0.34666667rem;
+}
+.content li .info .f .pay .buy {
+  float: right;
+  margin-right: 0.26666667rem;
+}
+.content li .info .f .pay .buy a {
+  background: #ff5e5d;
+  line-height: 0.66666667rem;
+  padding: 0 0.2rem;
+  color: #fff;
+  font-size: 0.34666667rem;
+  border-radius: 0.13333333rem;
+}
+.content .gotop {
+  width: 0.65333333rem;
+  height: 0.65333333rem;
+  position: fixed;
+  bottom: 0.4rem;
+  right: 0.13333333rem;
+  z-index: 999;
+  background: url(../images/up.png) no-repeat;
+  background-size: 1.30666667rem 0.65333333rem;
+  background-position: -0.65333333rem 0;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>省钱控</title>
+    <link rel="stylesheet" href="./lib/fa/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/moneyCtrl.css">
+    <script src="./lib/flexible/flexible.js"></script>
+</head>
+<body>
+    <!-- 容器 -->
+    <div class="m_container bgf">
+        <!-- 头部 -->
+        <div class="c_header">
+            <a href="javascript:history.back();" class="back"><i class="fa fa-angle-left"></i></a>
+            <h1>省钱控 — 最新优惠</h1>
+            <a href="#" class="app"></a>
+        </div>
+        <!-- 商品 -->
+        <div class="m_discount">
+            <!-- 模板 -->
+        </div>
+        <!-- 底部 -->
+        <div class="m_footer">
+            <ul class="clearfix login">
+                <li class="w30"><a href="#">登录</a></li>
+                <li class="w30"><a href="#">注册</a></li>
+                <li class="w40" id="top"><a href="javascript:;"><img src="./images/top.jpg" alt="" class="top"> <span>返回顶部</span></a></li>
+            </ul>
+            <p class="down"><a href="#">手机APP下载</a> <a href="#">慢慢买手机版</a>-- 掌上比价平台</p>
+            <p class="net">m.manmanbuy.com</p>
+        </div>
+
+    </div>
+
+    <!-- 商品列表模板 -->
+    <script type="text/html" id="monTmp">
+        <div class="d_content">
+            <ul>
+                {{ each result v i }}
+                <li>
+                    <a href="moneyProduct.html?productId={{ v.productId }}">
+                        <div class="imgBox">{{@ v.productImgSm }}</div>
+                        <div class="info">
+                            <div class="title txt-cut">{{ v.productName }}</div>
+                            <div class="price">{{ v.productPinkage }}</div>
+                            <div class="mall">{{ v.productFrom }}&nbsp;&nbsp;|&nbsp;&nbsp;{{ v.productTime }}</div>
+                            <div class="num"><i class="fa fa-comments-o"></i> {{ v.comcount }}</div>
+                        </div>
+                    </a>
+                </li>
+                {{ /each }}
+            </ul>
+        </div>
+        <div class="paginator clearfix">
+            <div><a href="javascript:;" class="prev">上一页</a></div>
+            <div class="outer">
+                <div class="btn"></div>
+                <select id="" class="selectBox">
+                    <%  
+                        for (var i = 1; i <= totalSize; i++) { 
+                    %>
+                    <option value="{{i}}" data-id="{{i}}"> {{i}}/{{ totalSize }}</option>
+                    <% } %>
+                </select>
+            </div>
+            <div><a href="javascript:;" class="next">下一页</a></div>
+        </div>
+    </script>
+
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/moneyCtrl.js"></script>
+</body>
+</html>

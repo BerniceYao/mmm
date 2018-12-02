@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>国内折扣</title>
+    <link rel="stylesheet" href="./lib/fa/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/inlanddiscount.css">
+    <script src="./lib/flexible/flexible.js"></script>
+</head>
+<body>
+    <div class="m_container">
+        <!-- 头部 -->
+        <div class="c_header">
+            <a href="javascript:history.back();" class="back"><i class="fa fa-angle-left"></i></a>
+            <h1>国内折扣</h1>
+            <a href="#" class="app"></a>
+        </div>
+
+        <!-- 列表 -->
+        <div class="list bgf">
+            <ul class="clearfix">
+                <li>
+                    <a href="#">
+                        <div class="imgBox"><img src="./images/pro2.jpg" alt=""></div>
+                        <div class="title txt-cut">西域美农新疆特产五星和田红枣250g*2</div>
+                        <div class="price">19.8元(5件99元)</div>
+                        <div class="info"><span class="mall">京东商城</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span class="time">10-22 13:28</span></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 底部 -->
+        <div class="m_footer">
+            <ul class="clearfix login">
+                <li class="w30"><a href="#">登录</a></li>
+                <li class="w30"><a href="#">注册</a></li>
+                <li class="w40" id="top"><a href="javascript:;"><img src="./images/top.jpg" alt="" class="top"> <span>返回顶部</span></a></li>
+            </ul>
+            <p class="down"><a href="#">手机APP下载</a> <a href="#">慢慢买手机版</a>-- 掌上比价平台</p>
+            <p class="net">m.manmanbuy.com</p>
+        </div>
+    </div>
+
+    <script type="text/html" id="listTmp">
+        {{ each result v i }}
+            <li>
+                <a href="discountProduct.html?productId={{ v.productId }}">
+                    <div class="imgBox" data-img="{{ v.productImg }}">
+                        {{ if i < 4 }}
+                            {{@ v.productImg }}
+                        {{ else }}
+                            <img src="./images/timg.gif" alt="" class="loading">
+                        {{ /if }}
+                    </div>
+                    <div class="title txt-cut">{{ v.productName }}</div>
+                    <div class="price">{{ v.productPrice }}</div>
+                    <div class="info"><span class="mall">{{ v.productFrom }}</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span class="time">{{ v.productTime }}</span></div>
+                </a>
+            </li>
+        {{ /each }}
+    </script>
+
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/inlanddiscount.js"></script>
+</body>
+</html>
